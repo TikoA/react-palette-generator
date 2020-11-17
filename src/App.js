@@ -1,9 +1,13 @@
 import { Box, Button } from '@chakra-ui/react'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Palette from './components/Palettegen'
 
 function App() {
   const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    setIndex(Math.floor(Math.random() * 199))
+  }, [])
 
   function handleKeyPress() {
     setIndex(Math.floor(Math.random() * 199))
