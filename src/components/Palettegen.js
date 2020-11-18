@@ -207,8 +207,8 @@ const Palette = ({ index }) => {
                 return (
                 <Box 
                     width={["100%","25%"]} 
-                    height={["20vh","auto"]} 
-                    key={Date.now() * Math.random() * 1000} 
+                    height={["16vh","auto"]} 
+                    key={Date.now() * Math.random() * 1000 + Date.now()} 
                     backgroundColor={p}
                     display="flex"
                     justifyContent="center"
